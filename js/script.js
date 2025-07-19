@@ -11,7 +11,14 @@ request.send();
 
 request.onload = function () {
     const productos = request.response;
+    pintarCabecera();
     pintarProductos(productos);
+}
+function pintarCabecera(){
+
+ const etiquetaH1=document.createElement("h1");
+    etiquetaH1.textContent="Tienda de Productos";
+    header.appendChild(etiquetaH1);
 }
 
 function pintarProductos(productos) {
