@@ -49,7 +49,7 @@ section{
 
 }
 }
-
+/* navegadot lap*/
     @media(min-widht: 1024px){
 section{
     grid-template-columns:repeat(4, 1fr);
