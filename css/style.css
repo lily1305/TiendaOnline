@@ -40,14 +40,19 @@ button {
     margin-top: 10px;
     border-radius: 8px;
 }
+
+
 /* tablet*/
 @media(min-widht: 600px){
 section{
     grid-template-columns:repeat(2, 1fr);
 
 }
+}
+
     @media(min-widht: 1024px){
 section{
     grid-template-columns:repeat(4, 1fr);
 
 }
+    }
