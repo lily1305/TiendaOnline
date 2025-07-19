@@ -44,14 +44,14 @@ button {
 
 /* tablet*/
 @media(min-widht: 600px){
-body{
+section{
     grid-template-columns:repeat(2, 1fr);
 
 }
 }
 /* navegadot lap*/
     @media(min-widht: 1024px){
-body{
+section{
     grid-template-columns:repeat(4, 1fr);
 
 }
