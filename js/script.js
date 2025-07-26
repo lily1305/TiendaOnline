@@ -11,14 +11,7 @@ request.send();
 
 request.onload = function () {
     const productos = request.response;
-    pintarCabecera();
     pintarProductos(productos);
-}
-function pintarCabecera(){
-
- const etiquetaH1=document.createElement("h1");
-    etiquetaH1.textContent="Tienda de Productos";
-    header.appendChild(etiquetaH1);
 }
 
 function pintarProductos(productos) {
@@ -29,14 +22,16 @@ function pintarProductos(productos) {
         img.src = producto.image;
         img.alt = producto.title;
 
-        const titulo = document.createElement('h2');
+        const titulo = document.createElement('h4'); 
+        titulo.className='titulo';
         titulo.textContent = producto.title;
 
         const precio = document.createElement('p');
         precio.className = 'precio';
-        precio.textContent = producto.price;
+        precio.textContent =  `${producto.price}`;
 
         const desc = document.createElement('p');
+      desc.className = 'descripcion';
         desc.textContent = producto.description;
 
         const botonComprar = document.createElement('button');
